@@ -72,6 +72,7 @@
 		572EEA8D1676F66300A08AF4 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 572EEA8B1676F66300A08AF4 /* Book.m */; };
 		572EEA911676F70B00A08AF4 /* MyBookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 572EEA901676F70B00A08AF4 /* MyBookView.m */; };
 		572EEA971676F72C00A08AF4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572EEA961676F72C00A08AF4 /* CoreData.framework */; };
+		57409D751676FEEF00E51272 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57409D741676FEEF00E51272 /* SDWebImage.framework */; };
 		57B9623D1676F77000E0765D /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B962051676F77000E0765D /* MagicalImportFunctions.m */; };
 		57B9623E1676F77000E0765D /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B962071676F77000E0765D /* NSAttributeDescription+MagicalDataImport.m */; };
 		57B9623F1676F77000E0765D /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B962091676F77000E0765D /* NSEntityDescription+MagicalDataImport.m */; };
@@ -98,7 +99,6 @@
 		57B962541676F77000E0765D /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B962361676F77000E0765D /* MagicalRecord+Setup.m */; };
 		57B962551676F77000E0765D /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B962381676F77000E0765D /* MagicalRecord+ShorthandSupport.m */; };
 		57B962561676F77000E0765D /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9623A1676F77000E0765D /* MagicalRecord.m */; };
-		57B962591676FAFC00E0765D /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B962581676FAFC00E0765D /* SDWebImage.framework */; };
 		57B9625B1676FCC600E0765D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B9625A1676FCC600E0765D /* ImageIO.framework */; };
 /* End PBXBuildFile section */
 
@@ -185,6 +185,7 @@
 		572EEA8F1676F70B00A08AF4 /* MyBookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBookView.h; sourceTree = "<group>"; };
 		572EEA901676F70B00A08AF4 /* MyBookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBookView.m; sourceTree = "<group>"; };
 		572EEA961676F72C00A08AF4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		57409D741676FEEF00E51272 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Vendor/SDWebImage.framework; sourceTree = "<group>"; };
 		57B962041676F77000E0765D /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
 		57B962051676F77000E0765D /* MagicalImportFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalImportFunctions.m; sourceTree = "<group>"; };
 		57B962061676F77000E0765D /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
@@ -239,7 +240,6 @@
 		57B9623A1676F77000E0765D /* MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalRecord.m; sourceTree = "<group>"; };
 		57B9623B1676F77000E0765D /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
 		57B9623C1676F77000E0765D /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
-		57B962581676FAFC00E0765D /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
 		57B9625A1676FCC600E0765D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -254,7 +254,7 @@
 				572EE9BA1676F07100A08AF4 /* UIKit.framework in Frameworks */,
 				572EE9BC1676F07100A08AF4 /* Foundation.framework in Frameworks */,
 				572EE9BE1676F07100A08AF4 /* CoreGraphics.framework in Frameworks */,
-				57B962591676FAFC00E0765D /* SDWebImage.framework in Frameworks */,
+				57409D751676FEEF00E51272 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +362,7 @@
 		572EE9F31676F11500A08AF4 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				57B962581676FAFC00E0765D /* SDWebImage.framework */,
+				57409D741676FEEF00E51272 /* SDWebImage.framework */,
 				57B962011676F77000E0765D /* MagicalRecord */,
 				572EE9F41676F11D00A08AF4 /* GSBookShelf */,
 			);
@@ -879,6 +879,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Vendor\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RandomBooks/RandomBooks-Prefix.pch";
@@ -894,6 +895,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Vendor\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RandomBooks/RandomBooks-Prefix.pch";
