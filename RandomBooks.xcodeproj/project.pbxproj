@@ -35,11 +35,7 @@
 		572EEA2C1676F2A200A08AF4 /* NSMutableArray+Rearrange.m in Sources */ = {isa = PBXBuildFile; fileRef = 572EEA081676F18B00A08AF4 /* NSMutableArray+Rearrange.m */; };
 		572EEA2D1676F2A200A08AF4 /* GSCellContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 572EEA0B1676F18B00A08AF4 /* GSCellContainerView.m */; };
 		572EEA2E1676F2A200A08AF4 /* GSBookViewContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 572EEA0D1676F18B00A08AF4 /* GSBookViewContainerView.m */; };
-		572EEA301676F2A200A08AF4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 572EEA1F1676F1D700A08AF4 /* ViewController.m */; };
-		572EEA311676F2A200A08AF4 /* BookShelfCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 572EEA211676F1D700A08AF4 /* BookShelfCellView.m */; };
-		572EEA321676F2A200A08AF4 /* BelowBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 572EEA231676F1D700A08AF4 /* BelowBottomView.m */; };
 		572EEA341676F2F000A08AF4 /* GSBookShelfView.m in Sources */ = {isa = PBXBuildFile; fileRef = 572EEA101676F18B00A08AF4 /* GSBookShelfView.m */; };
-		572EEA3A1676F37D00A08AF4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 572EEA391676F37D00A08AF4 /* ViewController.xib */; };
 		572EEA641676F3FA00A08AF4 /* Side Shading-iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 572EEA471676F3FA00A08AF4 /* Side Shading-iPhone.png */; };
 		572EEA651676F3FA00A08AF4 /* Side Shading-iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 572EEA481676F3FA00A08AF4 /* Side Shading-iPhone@2x.png */; };
 		572EEA661676F3FA00A08AF4 /* topshelf side shading-iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 572EEA491676F3FA00A08AF4 /* topshelf side shading-iPhone.png */; };
@@ -70,7 +66,6 @@
 		572EEA821676F49100A08AF4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 572EEA801676F49100A08AF4 /* Model.xcdatamodeld */; };
 		572EEA8C1676F66300A08AF4 /* _Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 572EEA891676F66300A08AF4 /* _Book.m */; };
 		572EEA8D1676F66300A08AF4 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 572EEA8B1676F66300A08AF4 /* Book.m */; };
-		572EEA911676F70B00A08AF4 /* MyBookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 572EEA901676F70B00A08AF4 /* MyBookView.m */; };
 		572EEA971676F72C00A08AF4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572EEA961676F72C00A08AF4 /* CoreData.framework */; };
 		57409D751676FEEF00E51272 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57409D741676FEEF00E51272 /* SDWebImage.framework */; };
 		57B9623D1676F77000E0765D /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B962051676F77000E0765D /* MagicalImportFunctions.m */; };
@@ -100,6 +95,11 @@
 		57B962551676F77000E0765D /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B962381676F77000E0765D /* MagicalRecord+ShorthandSupport.m */; };
 		57B962561676F77000E0765D /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B9623A1676F77000E0765D /* MagicalRecord.m */; };
 		57B9625B1676FCC600E0765D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B9625A1676FCC600E0765D /* ImageIO.framework */; };
+		57BCC6D51677176E00DC6630 /* BelowBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BCC6CD1677176E00DC6630 /* BelowBottomView.m */; };
+		57BCC6D61677176E00DC6630 /* BookShelfCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BCC6CF1677176E00DC6630 /* BookShelfCellView.m */; };
+		57BCC6D71677176E00DC6630 /* BookShelfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BCC6D11677176E00DC6630 /* BookShelfViewController.m */; };
+		57BCC6D81677176E00DC6630 /* BookShelfViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57BCC6D21677176E00DC6630 /* BookShelfViewController.xib */; };
+		57BCC6D91677176E00DC6630 /* BookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BCC6D41677176E00DC6630 /* BookView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,14 +142,7 @@
 		572EEA101676F18B00A08AF4 /* GSBookShelfView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSBookShelfView.m; sourceTree = "<group>"; };
 		572EEA111676F18B00A08AF4 /* GSBookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSBookView.h; sourceTree = "<group>"; };
 		572EEA121676F18B00A08AF4 /* GSBookShelfCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSBookShelfCell.h; sourceTree = "<group>"; };
-		572EEA1E1676F1D700A08AF4 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		572EEA1F1676F1D700A08AF4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		572EEA201676F1D700A08AF4 /* BookShelfCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfCellView.h; sourceTree = "<group>"; };
-		572EEA211676F1D700A08AF4 /* BookShelfCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfCellView.m; sourceTree = "<group>"; };
-		572EEA221676F1D700A08AF4 /* BelowBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BelowBottomView.h; sourceTree = "<group>"; };
-		572EEA231676F1D700A08AF4 /* BelowBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BelowBottomView.m; sourceTree = "<group>"; };
 		572EEA2A1676F27100A08AF4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		572EEA391676F37D00A08AF4 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		572EEA471676F3FA00A08AF4 /* Side Shading-iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Side Shading-iPhone.png"; sourceTree = "<group>"; };
 		572EEA481676F3FA00A08AF4 /* Side Shading-iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Side Shading-iPhone@2x.png"; sourceTree = "<group>"; };
 		572EEA491676F3FA00A08AF4 /* topshelf side shading-iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topshelf side shading-iPhone.png"; sourceTree = "<group>"; };
@@ -182,8 +175,6 @@
 		572EEA891676F66300A08AF4 /* _Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Book.m; path = ModelLayer/_Book.m; sourceTree = "<group>"; };
 		572EEA8A1676F66300A08AF4 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Book.h; path = ModelLayer/Book.h; sourceTree = "<group>"; };
 		572EEA8B1676F66300A08AF4 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Book.m; path = ModelLayer/Book.m; sourceTree = "<group>"; };
-		572EEA8F1676F70B00A08AF4 /* MyBookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBookView.h; sourceTree = "<group>"; };
-		572EEA901676F70B00A08AF4 /* MyBookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBookView.m; sourceTree = "<group>"; };
 		572EEA961676F72C00A08AF4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		57409D741676FEEF00E51272 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Vendor/SDWebImage.framework; sourceTree = "<group>"; };
 		57B962041676F77000E0765D /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
@@ -241,6 +232,15 @@
 		57B9623B1676F77000E0765D /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
 		57B9623C1676F77000E0765D /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
 		57B9625A1676FCC600E0765D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		57BCC6CC1677176E00DC6630 /* BelowBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BelowBottomView.h; sourceTree = "<group>"; };
+		57BCC6CD1677176E00DC6630 /* BelowBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BelowBottomView.m; sourceTree = "<group>"; };
+		57BCC6CE1677176E00DC6630 /* BookShelfCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfCellView.h; sourceTree = "<group>"; };
+		57BCC6CF1677176E00DC6630 /* BookShelfCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfCellView.m; sourceTree = "<group>"; };
+		57BCC6D01677176E00DC6630 /* BookShelfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfViewController.h; sourceTree = "<group>"; };
+		57BCC6D11677176E00DC6630 /* BookShelfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfViewController.m; sourceTree = "<group>"; };
+		57BCC6D21677176E00DC6630 /* BookShelfViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookShelfViewController.xib; sourceTree = "<group>"; };
+		57BCC6D31677176E00DC6630 /* BookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookView.h; sourceTree = "<group>"; };
+		57BCC6D41677176E00DC6630 /* BookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,17 +308,9 @@
 		572EE9BF1676F07100A08AF4 /* RandomBooks */ = {
 			isa = PBXGroup;
 			children = (
+				57BCC6CB1677176E00DC6630 /* BookShelf */,
 				572EEA7F1676F47B00A08AF4 /* Model */,
 				572EEA631676F3FA00A08AF4 /* Image */,
-				572EEA391676F37D00A08AF4 /* ViewController.xib */,
-				572EEA8F1676F70B00A08AF4 /* MyBookView.h */,
-				572EEA901676F70B00A08AF4 /* MyBookView.m */,
-				572EEA1E1676F1D700A08AF4 /* ViewController.h */,
-				572EEA1F1676F1D700A08AF4 /* ViewController.m */,
-				572EEA201676F1D700A08AF4 /* BookShelfCellView.h */,
-				572EEA211676F1D700A08AF4 /* BookShelfCellView.m */,
-				572EEA221676F1D700A08AF4 /* BelowBottomView.h */,
-				572EEA231676F1D700A08AF4 /* BelowBottomView.m */,
 				572EE9C81676F07100A08AF4 /* AppDelegate.h */,
 				572EE9C91676F07100A08AF4 /* AppDelegate.m */,
 				572EE9C01676F07100A08AF4 /* Supporting Files */,
@@ -578,6 +570,22 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		57BCC6CB1677176E00DC6630 /* BookShelf */ = {
+			isa = PBXGroup;
+			children = (
+				57BCC6CC1677176E00DC6630 /* BelowBottomView.h */,
+				57BCC6CD1677176E00DC6630 /* BelowBottomView.m */,
+				57BCC6CE1677176E00DC6630 /* BookShelfCellView.h */,
+				57BCC6CF1677176E00DC6630 /* BookShelfCellView.m */,
+				57BCC6D01677176E00DC6630 /* BookShelfViewController.h */,
+				57BCC6D11677176E00DC6630 /* BookShelfViewController.m */,
+				57BCC6D21677176E00DC6630 /* BookShelfViewController.xib */,
+				57BCC6D31677176E00DC6630 /* BookView.h */,
+				57BCC6D41677176E00DC6630 /* BookView.m */,
+			);
+			path = BookShelf;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -664,7 +672,6 @@
 				572EEA1B1676F18B00A08AF4 /* GSBookShelfView.m in Resources */,
 				572EEA1C1676F18B00A08AF4 /* GSBookView.h in Resources */,
 				572EEA1D1676F18B00A08AF4 /* GSBookShelfCell.h in Resources */,
-				572EEA3A1676F37D00A08AF4 /* ViewController.xib in Resources */,
 				572EEA641676F3FA00A08AF4 /* Side Shading-iPhone.png in Resources */,
 				572EEA651676F3FA00A08AF4 /* Side Shading-iPhone@2x.png in Resources */,
 				572EEA661676F3FA00A08AF4 /* topshelf side shading-iPhone.png in Resources */,
@@ -692,6 +699,7 @@
 				572EEA7C1676F3FA00A08AF4 /* BookViewChecked@2x.png in Resources */,
 				572EEA7D1676F3FA00A08AF4 /* BookShelfCell.png in Resources */,
 				572EEA7E1676F3FA00A08AF4 /* BookShelfCell@2x.png in Resources */,
+				57BCC6D81677176E00DC6630 /* BookShelfViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,15 +751,11 @@
 				572EEA2D1676F2A200A08AF4 /* GSCellContainerView.m in Sources */,
 				572EEA2E1676F2A200A08AF4 /* GSBookViewContainerView.m in Sources */,
 				572EEA341676F2F000A08AF4 /* GSBookShelfView.m in Sources */,
-				572EEA301676F2A200A08AF4 /* ViewController.m in Sources */,
-				572EEA311676F2A200A08AF4 /* BookShelfCellView.m in Sources */,
-				572EEA321676F2A200A08AF4 /* BelowBottomView.m in Sources */,
 				572EE9C61676F07100A08AF4 /* main.m in Sources */,
 				572EE9CA1676F07100A08AF4 /* AppDelegate.m in Sources */,
 				572EEA821676F49100A08AF4 /* Model.xcdatamodeld in Sources */,
 				572EEA8C1676F66300A08AF4 /* _Book.m in Sources */,
 				572EEA8D1676F66300A08AF4 /* Book.m in Sources */,
-				572EEA911676F70B00A08AF4 /* MyBookView.m in Sources */,
 				57B9623D1676F77000E0765D /* MagicalImportFunctions.m in Sources */,
 				57B9623E1676F77000E0765D /* NSAttributeDescription+MagicalDataImport.m in Sources */,
 				57B9623F1676F77000E0765D /* NSEntityDescription+MagicalDataImport.m in Sources */,
@@ -778,6 +782,10 @@
 				57B962541676F77000E0765D /* MagicalRecord+Setup.m in Sources */,
 				57B962551676F77000E0765D /* MagicalRecord+ShorthandSupport.m in Sources */,
 				57B962561676F77000E0765D /* MagicalRecord.m in Sources */,
+				57BCC6D51677176E00DC6630 /* BelowBottomView.m in Sources */,
+				57BCC6D61677176E00DC6630 /* BookShelfCellView.m in Sources */,
+				57BCC6D71677176E00DC6630 /* BookShelfViewController.m in Sources */,
+				57BCC6D91677176E00DC6630 /* BookView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "BookShelfViewController.h"
 
 #import "Book.h"
 @implementation AppDelegate
@@ -21,7 +21,7 @@
     
     
     [Book populate];
-    ViewController* viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    BookShelfViewController* viewController = [[BookShelfViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
     self.window.rootViewController = navController;
     
