@@ -7,9 +7,11 @@
     UIImageView *_bookImage;
 }
 @synthesize reuseIdentifier = _reuseIdentifier;
-
+@synthesize book = _book;
 
 - (void) configureWithBook:(Book*) book {
+    _book = book; //fixme
+
     [_bookImage setImageWithURL:[book imageURL]];
     [self setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.png", 2]]  forState: UIControlStateNormal];
 }

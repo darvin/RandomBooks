@@ -21,7 +21,7 @@
     
     
     [Book populate];
-    BookShelfViewController* viewController = [[BookShelfViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    BookShelfViewController* viewController = [[BookShelfViewController alloc] initWithNibName:@"BookShelfViewController" bundle:nil];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
     self.window.rootViewController = navController;
     

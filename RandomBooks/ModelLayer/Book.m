@@ -29,7 +29,7 @@
         CFRelease(uuid);
         
         book.imageLink = [NSString stringWithFormat:@"http://getkitten-darvin.rhcloud.com/kitten.png?nonsense=%@", uuidString];
-        book.favoriteValue = (arc4random()%5==1);
+        book.favoriteValue = (arc4random()%2==1);
         
     }
 }

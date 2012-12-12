@@ -7,6 +7,9 @@
 #import "BelowBottomView.h"
 #import <QuartzCore/QuartzCore.h>
 #define CELL_HEIGHT 139.0f
+#import "ReaderViewController.h"
+#import "RandomChooserViewController.h"
+
 
 @implementation BookShelfViewController {
     NSFetchedResultsController* _frc;
@@ -104,7 +107,7 @@
 #pragma mark GSBookShelfViewDataSource
 
 - (NSInteger)numberOfBooksInBookShelfView:(GSBookShelfView *)bookShelfView {
-    return [[_frc fetchedObjects] count];
+    return [[_frc fetchedObjects] count]+1;
 }
 
 - (NSInteger)numberOFBooksInCellOfBookShelfView:(GSBookShelfView *)bookShelfView {
@@ -125,7 +128,8 @@
         bookView.reuseIdentifier = identifier;
         [bookView addTarget:self action:@selector(bookViewClicked:) forControlEvents:UIControlEventTouchUpInside];
     }
-    Book* book = [_frc objectAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]];
+    
+    Book* book = index?[_frc objectAtIndexPath:[NSIndexPath indexPathForRow:index-1 inSection:0]]:nil;
     [bookView configureWithBook:book];
     return bookView;
 }
@@ -198,13 +202,11 @@
 
 - (void)bookViewClicked:(UIButton *)button {
     BookView *bookView = (BookView *)button;
-    
-    if (_editMode) {
-        NSNumber *status = [NSNumber numberWithInt:bookView.selected];
-
-    }
-    else {
-        [bookView setSelected:NO];
+    if (!bookView.book) {
+        [self presentModalViewController:[[RandomChooserViewController alloc] initWithNibName:@"RandomChooserViewController" bundle:nil] animated:YES];
+    } else {
+        
+            [self presentModalViewController:[[ReaderViewController alloc] initWithNibName:@"ReaderViewController" bundle:nil] animated:YES];
     }
 }
 

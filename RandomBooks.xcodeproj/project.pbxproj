@@ -100,6 +100,10 @@
 		57BCC6D71677176E00DC6630 /* BookShelfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BCC6D11677176E00DC6630 /* BookShelfViewController.m */; };
 		57BCC6D81677176E00DC6630 /* BookShelfViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57BCC6D21677176E00DC6630 /* BookShelfViewController.xib */; };
 		57BCC6D91677176E00DC6630 /* BookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BCC6D41677176E00DC6630 /* BookView.m */; };
+		57E006FD167883BB000E3C3A /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E006FB167883BB000E3C3A /* ReaderViewController.m */; };
+		57E006FE167883BB000E3C3A /* ReaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57E006FC167883BB000E3C3A /* ReaderViewController.xib */; };
+		57E00704167883DC000E3C3A /* RandomChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E00702167883DC000E3C3A /* RandomChooserViewController.m */; };
+		57E00705167883DC000E3C3A /* RandomChooserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57E00703167883DC000E3C3A /* RandomChooserViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -241,6 +245,12 @@
 		57BCC6D21677176E00DC6630 /* BookShelfViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookShelfViewController.xib; sourceTree = "<group>"; };
 		57BCC6D31677176E00DC6630 /* BookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookView.h; sourceTree = "<group>"; };
 		57BCC6D41677176E00DC6630 /* BookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookView.m; sourceTree = "<group>"; };
+		57E006FA167883BB000E3C3A /* ReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReaderViewController.h; path = Reader/ReaderViewController.h; sourceTree = "<group>"; };
+		57E006FB167883BB000E3C3A /* ReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReaderViewController.m; path = Reader/ReaderViewController.m; sourceTree = "<group>"; };
+		57E006FC167883BB000E3C3A /* ReaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReaderViewController.xib; path = Reader/ReaderViewController.xib; sourceTree = "<group>"; };
+		57E00701167883DC000E3C3A /* RandomChooserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RandomChooserViewController.h; path = RandomChooser/RandomChooserViewController.h; sourceTree = "<group>"; };
+		57E00702167883DC000E3C3A /* RandomChooserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RandomChooserViewController.m; path = RandomChooser/RandomChooserViewController.m; sourceTree = "<group>"; };
+		57E00703167883DC000E3C3A /* RandomChooserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RandomChooserViewController.xib; path = RandomChooser/RandomChooserViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,12 +318,14 @@
 		572EE9BF1676F07100A08AF4 /* RandomBooks */ = {
 			isa = PBXGroup;
 			children = (
+				57E00700167883C2000E3C3A /* RandomChooser */,
 				57BCC6CB1677176E00DC6630 /* BookShelf */,
 				572EEA7F1676F47B00A08AF4 /* Model */,
 				572EEA631676F3FA00A08AF4 /* Image */,
 				572EE9C81676F07100A08AF4 /* AppDelegate.h */,
 				572EE9C91676F07100A08AF4 /* AppDelegate.m */,
 				572EE9C01676F07100A08AF4 /* Supporting Files */,
+				57E00706167883E2000E3C3A /* Reader */,
 			);
 			path = RandomBooks;
 			sourceTree = "<group>";
@@ -586,6 +598,26 @@
 			path = BookShelf;
 			sourceTree = "<group>";
 		};
+		57E00700167883C2000E3C3A /* RandomChooser */ = {
+			isa = PBXGroup;
+			children = (
+				57E00701167883DC000E3C3A /* RandomChooserViewController.h */,
+				57E00702167883DC000E3C3A /* RandomChooserViewController.m */,
+				57E00703167883DC000E3C3A /* RandomChooserViewController.xib */,
+			);
+			name = RandomChooser;
+			sourceTree = "<group>";
+		};
+		57E00706167883E2000E3C3A /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				57E006FA167883BB000E3C3A /* ReaderViewController.h */,
+				57E006FB167883BB000E3C3A /* ReaderViewController.m */,
+				57E006FC167883BB000E3C3A /* ReaderViewController.xib */,
+			);
+			name = Reader;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -700,6 +732,8 @@
 				572EEA7D1676F3FA00A08AF4 /* BookShelfCell.png in Resources */,
 				572EEA7E1676F3FA00A08AF4 /* BookShelfCell@2x.png in Resources */,
 				57BCC6D81677176E00DC6630 /* BookShelfViewController.xib in Resources */,
+				57E006FE167883BB000E3C3A /* ReaderViewController.xib in Resources */,
+				57E00705167883DC000E3C3A /* RandomChooserViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -786,6 +820,8 @@
 				57BCC6D61677176E00DC6630 /* BookShelfCellView.m in Sources */,
 				57BCC6D71677176E00DC6630 /* BookShelfViewController.m in Sources */,
 				57BCC6D91677176E00DC6630 /* BookView.m in Sources */,
+				57E006FD167883BB000E3C3A /* ReaderViewController.m in Sources */,
+				57E00704167883DC000E3C3A /* RandomChooserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -849,7 +885,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
@@ -872,7 +908,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
